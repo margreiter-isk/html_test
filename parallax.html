@@ -3,6 +3,13 @@
 
 <head>
     <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            color: #777;
+        }
+
         .parallax {
             /* The image used */
             background-image: url("coffeeshop.jpg");
@@ -26,6 +33,23 @@
             height: 600x;
             background-image: url("coffee.jpg");
         }
+
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+
+        .caption span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
     </style>
 </head>
 
@@ -36,7 +60,9 @@
     <div class="parallax"></div>
 
     <div class="first_item">
-        This is the first item
+        <div class="caption">
+            <span class="border">SCROLL DOWN</span>
+        </div>
     </div>
     <div class="second_item">
         This is the second item
