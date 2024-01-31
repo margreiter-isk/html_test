@@ -11,9 +11,6 @@
         }
 
         .parallax {
-            /* The image used */
-            background-image: url("coffeeshop.jpg");
-
             /* Set a specific height */
             min-height: 500px;
 
@@ -24,13 +21,23 @@
             background-size: cover;
         }
 
-        .first_item {
-            height: 600x;
+        .coffee {
+            /* The image used */
             background-image: url("coffee.jpg");
         }
 
+        .coffeeshop {
+            /* The image used */
+            background-image: url("coffeeshop.jpg");
+        }
+
+        .first_item {
+            min-height: 600x;
+            background-color: #777;
+        }
+
         .second_item {
-            height: 600x;
+            min-height: 600x;
             background-image: url("coffee.jpg");
         }
 
@@ -54,18 +61,21 @@
 </head>
 
 <body>
-
-    <p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
-
-    <div class="parallax"></div>
-
-    <div class="first_item">
+    <div class="parallax coffeeshop">
         <div class="caption">
             <span class="border">SCROLL DOWN</span>
         </div>
     </div>
+
+    <div class="first_item">
+        This is a picture of a coffee shop.
+    </div>
+    <div class="parallax coffee">
+        
+    </div>
+
     <div class="second_item">
-        This is the second item
+        This is a picture of a cup of coffee.
     </div>
 
 </body>
