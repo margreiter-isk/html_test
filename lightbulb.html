@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+// you can either place JavaScript code in the <script> element or write it directly into an html element
+function turnOn() {
+	document.getElementById('myImage').src='pic_bulbon.gif';
+}
+
+</script>
+</head>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="turnOn()">Turn on the light</button>
+
+<img onclick="turnOn()" id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<!-- this is an exemple of how to write JS code directly into the html element: -->
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>
